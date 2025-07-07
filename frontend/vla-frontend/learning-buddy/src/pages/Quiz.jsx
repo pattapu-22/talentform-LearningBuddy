@@ -72,7 +72,7 @@ const QuizPage = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post('http://localhost:5000/api/aichat', { message: promptText });
+      const res = await axios.post('https://talentform-backend-nff3.onrender.com', { message: promptText });
       const data = JSON.parse(res.data.response);
 
       const newQuiz = {
