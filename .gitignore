@@ -1,0 +1,24 @@
+# dependencies
+/node_modules
+
+# build output
+/build
+/dist
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# firebase secrets
+serviceAccountKey.json
+firebase.jso
+
+# misc
+.DS_Store
+*.log
+
+# vscode
+.vscode
