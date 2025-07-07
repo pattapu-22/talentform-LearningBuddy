@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "frontend/vla-frontend/learning-buddy/dist",
     "ignore": [
       "firebase.json",
       "**/.*",
