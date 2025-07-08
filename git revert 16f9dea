@@ -1,0 +1,11 @@
+[33mb51fc7b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Add engines field to specify Node 18 version
+[33m9b7ee6a[m Enable CORS for Firebase frontend
+[33m2046eed[m Enable CORS for Firebase frontend
+[33m7ad250a[m Enable CORS for Firebase frontend
+[33m8194847[m Enable CORS for Firebase frontend
+[33mc527625[m Enable CORS for Firebase frontend
+[33me7a311f[m Configure firebase.json and fix build directory for deploy
+[33m32ec3b9[m Configure firebase.json and fix build directory for deploy
+[33m16f9dea[m Updated API URLs for production
+[33mc5b37e4[m Setup Firebase Hosting workflows
+[33m7a198af[m Initial commit: React + Firebase app

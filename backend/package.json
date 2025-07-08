@@ -21,7 +21,7 @@
     "groq-sdk": "^0.26.0"
   },
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   }
   
 }
