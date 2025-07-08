@@ -4,9 +4,19 @@ import dotenv from "dotenv";
 import Groq from "groq-sdk";
 
 dotenv.config();
+const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://learningbuddy-c8654.web.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // include methods you use
+  credentials: true
+}));
+
+app.post('/', (req, res) => {
+  res.send('Root POST route working');
+});
+
 app.use(express.json());
 
 const groq = new Groq({
