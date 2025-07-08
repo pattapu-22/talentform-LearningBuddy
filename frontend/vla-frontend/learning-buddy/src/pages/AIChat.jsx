@@ -45,8 +45,6 @@ const AIChatPage = () => {
 
     try {
       const res = await axios.post('http://localhost:5000/api/ask', { question: input });
-            //const res = await axios.post('https://talentform-backend.onrender.com', { question: input });
-
       const aiMessage = { id: Date.now() + 1, type: 'ai', text: res.data.answer };
       setMessages(prev => [...prev, aiMessage]);
 

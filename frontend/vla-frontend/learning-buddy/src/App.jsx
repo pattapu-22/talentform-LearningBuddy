@@ -1,3 +1,56 @@
+// import React, { useState } from 'react'
+// import { Routes, Route, Navigate } from 'react-router-dom'
+// import Navbar from './components/Navbar'
+// import Dashboard from './pages/Dashboard'
+// import AIChat from './pages/AIChat'
+// import Quiz from './pages/Quiz'
+// import Materials from './pages/Materials'
+// import Login from './pages/Login'
+// import Register from './pages/Register'
+
+// function App() {
+//   const [isAuthenticated, setIsAuthenticated] = useState(false)
+//   const [user, setUser] = useState(null)
+
+//   const handleLogin = (userData) => {
+//     setIsAuthenticated(true)
+//     setUser(userData)
+//   }
+
+//   const handleLogout = () => {
+//     setIsAuthenticated(false)
+//     setUser(null)
+//   }
+
+//   if (!isAuthenticated) {
+//     return (
+//       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+//         <Routes>
+//           <Route path="/register" element={<Register onLogin={handleLogin} />} />
+//           <Route path="*" element={<Login onLogin={handleLogin} />} />
+//         </Routes>
+//       </div>
+//     )
+//   }
+
+//   return (
+//     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+//       <Navbar user={user} onLogout={handleLogout} />
+//       <div className="pt-16">
+//         <Routes>
+//           <Route path="/" element={<Dashboard user={user} />} />
+//           <Route path="/dashboard" element={<Dashboard user={user} />} />
+//           <Route path="/chat" element={<AIChat />} />
+//           <Route path="/quiz" element={<Quiz />} />
+//           <Route path="/materials" element={<Materials />} />
+//           <Route path="*" element={<Navigate to="/dashboard" replace />} />
+//         </Routes>
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default App
 
 import React, { useEffect, useState } from 'react'
 import { Routes, Route, Navigate, useNavigate } from 'react-router-dom'
