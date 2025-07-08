@@ -89,6 +89,8 @@
 // app.listen(5000, () => {
 //   console.log("✅ Backend server running on port 5000");
 // });
+
+
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -106,6 +108,8 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
+
+app.options('*', cors());
 
 // ✅ Initialize Groq SDK
 const groq = new Groq({
@@ -170,6 +174,10 @@ app.post("/api/ask", async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("✅ Backend server running on port 5000");
+// app.listen(5000, () => {
+//   console.log("✅ Backend server running on port 5000");
+// });
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`✅ Backend server running on port ${PORT}`);
 });
